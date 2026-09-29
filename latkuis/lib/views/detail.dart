@@ -107,19 +107,6 @@ class DetailPage extends StatelessWidget {
                         .toList(),
                   ),
                   const SizedBox(height: 30),
-
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text('Kembali ke Home'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      foregroundColor: Colors.white,
-                      minimumSize: const Size(double.infinity, 45),
-                    ),
-                  ),
                 ],
               ),
             ),
