@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
       });
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Login Gagal: NIM atau Nama Prodi salah!'),
+          content: Text('Login Gagal: Username atau password salah!'),
           backgroundColor: Colors.red,
         ),
       );
@@ -126,7 +126,7 @@ Widget _inputField({
 Widget _usernameField(TextEditingController controller, bool isLoginFailed) {
   return _inputField(
     controller: controller,
-    hint: 'Username (NIM)',
+    hint: 'Username',
     icon: Icons.person,
     isLoginFailed: isLoginFailed,
   );
@@ -135,7 +135,7 @@ Widget _usernameField(TextEditingController controller, bool isLoginFailed) {
 Widget _passwordField(TextEditingController controller, bool isLoginFailed) {
   return _inputField(
     controller: controller,
-    hint: 'Password (Nama Prodi)',
+    hint: 'Password',
     icon: Icons.lock,
     isLoginFailed: isLoginFailed,
     obscure: true,

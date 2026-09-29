@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../models/animals_data.dart';
 
-// StatelessWidget karena hanya menampilkan detail data yang sudah fix
+
 class DetailPage extends StatelessWidget {
-  final int animalIndex; // index hewan yang diklik di Home
+  final int animalIndex;
   const DetailPage({super.key, required this.animalIndex});
 
   @override
@@ -73,7 +73,7 @@ class DetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
 
-                  // Habitat
+ 
                   const Text(
                     'Habitat',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
